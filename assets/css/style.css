@@ -1,3 +1,7 @@
+:root {
+    --textgray: #c3bfc3;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,13 +17,19 @@ header {
     align-items: center;
 }
 
-header a {
-    font-size: 22px;
+.page-anchors a {
+    font-size: 20px;
+    margin: 15px;
 }
 
-a:link, a:visited,  a:hover, a:active { 
-    text-decoration: none;
+.page-anchors a:hover {
     color: white;
+    transition-timing-function: linear;
+}
+
+a:link, a:visited { 
+    text-decoration: none;
+    color: var(--textgray);
  }
 
 header img{
