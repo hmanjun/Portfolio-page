@@ -94,8 +94,8 @@ header img{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: solid;
-    border-width: 5px;
+    border: double;
+    border-width: 10px;
     margin-left: 20px;
     margin-top: 40px;
 }
@@ -140,53 +140,48 @@ header img{
 }
 
 /*Projects*/
-
-.projects{
+.projects {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     margin-top: 60px;
     margin-right: 380px;
     margin-left: 380px;
     color: var(--textgray);
-    font-size: 19px;
 }
 
 .projects h1{
     font-size: 60px;
     color: white;
-    flex-basis: 100%;
-    
 }
 
-.proj-card{
+.projects .card-cont{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 430px;
-    border: solid;
-    border-radius: 2%;
-    box-shadow: 10 10 2 wheat;
-    line-height: 1.5;
-    margin: 20px;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-.proj-card h3{
-    font-size: 30px;
-    color: skyblue;
-}
-
-.proj-card img{
-    height: 230px;
-    width: 430px;
+#main-project, #main-project img{
+    width: 450px;
+    height: 270px;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
 }
 
-.proj-card p{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-top: -10px;
+.proj-card, .proj-card img {
+    width: 375px;
+    height: 225px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+#main-project, .proj-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--textgray);
+    border: solid;
+    border-radius: 2%;
 }
 
 .proj-buttons button{
@@ -202,13 +197,15 @@ header img{
     background-color: #6b3030;
 }
 
-#main-project{
-    margin-left:500;
+#main-project p, .proj-card p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: -10px;
 }
 
-.break{
-    flex-basis: 100%;
-    height: 0;
+#main-project h3, .proj-card h3{
+    font-size: 30px;
+    color: #9cc9e3;
 }
-
 
