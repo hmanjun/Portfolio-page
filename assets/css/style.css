@@ -10,6 +10,8 @@ body {
     background-color: #0f1624;
 }
 
+/*Header*/
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -23,17 +25,17 @@ header {
     transition: color .3s;
 }
 
-.page-anchors a:hover {
+.page-anchors a:hover { 
     color: white;
     transition-timing-function: linear;
 }
 
-a:link, a:visited { 
+a:link, a:visited { /*remove underline+link color*/
     text-decoration: none;
     color: var(--textgray);
 }
 
-header img{
+header img{ /*scale img*/
     height: 40px;
     width: 40px;
     
@@ -54,7 +56,7 @@ header img{
 }
 
 .welcome p{
-    margin-top: -30px;
+    margin-top: -30px; /*Decrease distance btwn title and text*/
     font-size: 25px;
     line-height: 1.5;
     color: var(--textgray);
@@ -66,7 +68,7 @@ header img{
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
-    margin-right: 380px;
+    margin-right: 380px; /*New default side margins*/
     margin-left: 380px;
     font-size: 25px;
     color: var(--textgray);
@@ -93,7 +95,7 @@ header img{
 .about-me div img{
     height: 300px;
     width: 300px;
-    border-radius: 50%;
+    border-radius: 50%; /*Circular Portfolio image*/
     border: double;
     border-width: 10px;
     margin-left: 20px;
@@ -124,7 +126,7 @@ header img{
     font-size: 30px;
 }
 
-.card-cont{
+.card-cont{ /*Keep all cards on one row while still being in column with other elements*/
     display: flex;
     flex-direction: row;
 }
@@ -157,25 +159,29 @@ header img{
 .projects .card-cont{
     display: flex;
     justify-content: space-between;
-    margin-left: 70px;
+    margin-left: 70px; /*Center container further*/
     margin-right: 70px;
 }
 
 #main-project{
     width: 450px;
-    border-top-left-radius: 2%;
+    border-top-left-radius: 2%; 
     border-top-right-radius: 2%;
     margin: 20px;
 }
 
-#main-project img{
-    height: 270px;
+#main-project img{ /*Bigger project card*/
+    height: 270px; /*Scaling screenshots to fit cards*/
     width: 450px;
+    border-top-left-radius: 2%; /*required image curving*/
+    border-top-right-radius: 2%;
 }
 
 .proj-card img{
-    height: 225px;
+    height: 225px; /*Smaller card sizing*/
     width: 375px;
+    border-top-left-radius: 2%; /*required image curving*/
+    border-top-right-radius: 2%;
 }
 
 .proj-card {
@@ -187,13 +193,13 @@ header img{
 
 #main-project, .proj-card{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Border */
     align-items: center;
     border: solid;
     border-radius: 2%;
 }
 
-.proj-buttons button{
+.proj-buttons button{ /*Create new red buttons on project cards*/
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 30px;
@@ -261,6 +267,8 @@ footer img{
 /*Media Queries*/
 @media (max-width: 1500px) {
     
+    /*Convert flexboxes into columns*/
+    /*Remove side margins*/
     header{
         display: flex;
         justify-content: space-between;
@@ -302,7 +310,7 @@ footer img{
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px){  /*Force collapse earlier*/
     #proj-card-cont, #card-cont-2{
         flex-direction: column;
         align-items: center;
@@ -315,15 +323,19 @@ footer img{
         flex-direction: column;
     }
 
+    /*Education cards made into rows to fit new screen sizing*/
     .edu-card {
         width: 100%;
     }
 
+    /*Force project cards into columns*/
     .projects .card-cont{
         flex-direction: column;
         align-items: center;
     }
 
+
+    /*Change cards to use adaptive sizing*/
     #main-project img{
         width: 100%;
     }
