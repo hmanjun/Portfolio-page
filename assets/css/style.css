@@ -258,5 +258,88 @@ footer img{
 }
 
 
+/*Media Queries*/
+@media (max-width: 1500px) {
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .about-me {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+
+    .about-me div{
+        order: 1;
+        margin: auto;
+    }
+
+    .about-me div img{
+        margin-left: 0;
+    }
+
+    .education{
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+
+    .projects{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    footer {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
 
 
+}
+
+
+@media (max-width: 1200px){
+    #proj-card-cont, #card-cont-2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px){
+
+    .card-cont{
+        flex-direction: column;
+    }
+
+    .edu-card {
+        width: 100%;
+    }
+
+    .projects .card-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-project img{
+        width: 100%;
+    }
+
+    #main-project{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .proj-card img{
+        width: 100%;
+    }
+
+    .proj-card{
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
