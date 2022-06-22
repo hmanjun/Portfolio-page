@@ -31,7 +31,7 @@ header {
 a:link, a:visited { 
     text-decoration: none;
     color: var(--textgray);
- }
+}
 
 header img{
     height: 40px;
@@ -161,25 +161,34 @@ header img{
     margin-right: 70px;
 }
 
-#main-project, #main-project img{
+#main-project{
     width: 450px;
-    height: 270px;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
+    margin: 20px;
 }
 
-.proj-card, .proj-card img {
-    width: 375px;
+#main-project img{
+    height: 270px;
+    width: 450px;
+}
+
+.proj-card img{
     height: 225px;
+    width: 375px;
+}
+
+.proj-card {
+    width: 375px;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
+    margin: 20px;
 }
 
 #main-project, .proj-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--textgray);
     border: solid;
     border-radius: 2%;
 }
@@ -208,4 +217,46 @@ header img{
     font-size: 30px;
     color: #9cc9e3;
 }
+
+/*Contact*/
+footer {
+    display: flex;
+    flex-direction: column;
+    color: var(--textgray);
+    margin-top: 60px;
+    margin-right: 380px;
+    margin-left: 380px;
+}
+
+#contact h1{
+    font-size: 60px;
+    color: white;
+}
+
+#contact article{
+    display: flex;
+}
+
+.info-holder{
+    margin-right: 150px;
+}
+
+.info-holder h3{
+    color: white;
+}
+
+footer nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
 
