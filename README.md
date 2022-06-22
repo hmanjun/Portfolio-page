@@ -1,7 +1,13 @@
-# Portfolio-page
+# Personal Portfolio
 
-# Description
-My web portfolio made using HTML and CSS.
+## Description
+My updated portfolio curated on a single web page. Contains a brief segment about me, history of my pertinent education, and links to previous projects. Made using HTML and CSS, this project is a benchmark of my current abilities with these two skills. I made use of semantic elements, flex-boxes, and media queries to make a site that is also responsive to screen size.
 
-# Deployment Link
-[Link](https://hmanjun.github.io/Portfolio-page/)
+## Deployed Site
+![Website Screem Shot](./assets/img/portfolio-page-screenshot.PNG)
+
+## Deployed Site Link
+[Portfolio Website](https://hmanjun.github.io/Portfolio-page/)
+
+## License
+[Link](https://github.com/hmanjun/horiseon-refactor/blob/main/LICENSE)
